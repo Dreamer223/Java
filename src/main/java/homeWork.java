@@ -44,13 +44,7 @@ public class homeWork {
             Set<String> set = new HashSet<>(symbol);
             symbol.clear();
             symbol.addAll(set);
-            if (stats.containsValue(symbol))
-            {
-                continue;
-            }else
-            {
-                stats.put(value,symbol);
-            }
+            stats.put(value, symbol);
         }
         System.out.println(stats);
 
