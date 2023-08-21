@@ -41,7 +41,8 @@ public class homeWork {
                     symbol.add(texts[j]);
                 }
             }
-            Set<String> set = new HashSet<>(symbol);
+//            Эти три сторки предназначены для удаления повторов с списка, но они делают это в разброс
+            Set<String> set = new TreeSet<>(symbol);
             symbol.clear();
             symbol.addAll(set);
             stats.put(value, symbol);
